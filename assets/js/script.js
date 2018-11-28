@@ -1,9 +1,25 @@
 $(document).ready(function() {
 
+
+
+	// making homepage navbar responsive
+	let startingPercent = 90
+
+	$("#arrow1").click(function() {
+		startingPercent = (startingPercent + 0.5)
+		while (startingPercent <= 105) {
+			startingPercent = (startingPercent + 0.5);
+			$("#homepage-navbar").css("top", startingPercent + "%");
+		}
+
+	});
+
+
 	// arrow scroollll 
 	$("#arrow1").on("click", function(event) {
    		if (this.hash !== "") {
       		event.preventDefault();
+      		var hash = this.hash;
 				$(window).animate({scrollTop: 700}, 800, function(){
         			window.location.hash = this.hash;
       			});
@@ -11,7 +27,7 @@ $(document).ready(function() {
 	});
 
 
-	//good good slideshow coding!!!//
+	//good good slideshow coding!!! THIS ONE WORKS DONT
 	const distanceToNextImage = -350;
 	let currentImageNumber = 5;
 
@@ -25,18 +41,7 @@ $(document).ready(function() {
 			$(".img" + (currentImageNumber + 1)%6).fadeOut(1000);
 		}
 	}, 5000);
-
-
-	// making homepage navbar responsive
-	let startingPercent = 90
-
-	$("#arrow1").click(function() {
-		startingPercent = (startingPercent + 0.5)
-		while (startingPercent < 105) {
-			startingPercent = (startingPercent + 0.5);
-			$("#homepage-navbar").delay(1000).css("top", startingPercent + "%");
-		}
-	}); // shrug
+	 // shrug
 
 	
 
@@ -46,29 +51,22 @@ $(document).ready(function() {
 
 	// reviews page !!!
 	new TypeIt("#typeit", {
-		strings: ['<span class="title">This is what some folks have said about me </span>', 
-		'<span class="title">5starts; I laughed so hard my innards fell out</span> <span class="source">-Daily Californian University News Editor Francesca Munsayac</span>'],
+		strings: ['<span class="title">Here are some reviews I have as an individual, that show that I am a hardworking and accomplished individual</span>', 
+		'<span class="quote">:)</span>',
+		'<span class="quote">5starts; I laughed so hard my innards fell out</span> <span class="source">-Daily Californian University News Editor Francesca Munsayac</span>',
+		'<span class="quote">You are a solid 3</span> <span class="source">- my older sister Sumer</span>',
+		'<span class="quote">You cook such good noodles that now I have standards for noodles</span> <span class="source">- my roommate</span>',
+		'<span class="quote">snac</span> <span class="source">- Daily Californian City News Editor Jessíca Jiménez</span>',
+		'<span class="quote">Please put on some pants</span> <span class="source">- my other roommate</span>',
+		'<span class="quote">hot thot tater tot</span> <span class="source">- my friend</span>',
+		],
 		speed: 60,
 		breakLines: false,
 		loop: true,
 		lifeLike: true,
-		pause: 500
+		pause: 500,
+		nextStringDelay: [1000,2000]
 	});
-	/* .type('<span class="title">This is what some folks have said about me :) </span>')
-	.pause(500)
-	.delete()
-	.type('<span class="title">5starts; I laughed so hard my innards fell out</span>')
-	.pause(500)
-	.break()
-	.type('-Daily Californian University News Editor Francesca Munsayac')
-	.pause(1000)
-	.delete()
-	.type('<span class="title">You are a solid 3</span>')
-	.pause(1000)
-	.break()
-	.type('-my older sister Sumer');
-
-	*/
 
 	
 
