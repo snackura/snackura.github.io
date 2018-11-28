@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 	// arrow scroollll 
 	$("#arrow1").on("click", function(event) {
    		if (this.hash !== "") {
@@ -43,10 +42,33 @@ $(document).ready(function() {
 
 
 	// reviews page !!!
-	setInterval(function() {
-
+	new TypeIt("#typeit", {
+		strings: ['<span class="title">This is what some folks have said about me </span>', 
+		'<span class="title">5starts; I laughed so hard my innards fell out</span> <span class="source">-Daily Californian University News Editor Francesca Munsayac</span>'],
+		speed: 60,
+		breakLines: false,
+		loop: true,
+		lifeLike: true,
+		pause: 500
 	});
+	/* .type('<span class="title">This is what some folks have said about me :) </span>')
+	.pause(500)
+	.delete()
+	.type('<span class="title">5starts; I laughed so hard my innards fell out</span>')
+	.pause(500)
+	.break()
+	.type('-Daily Californian University News Editor Francesca Munsayac')
+	.pause(1000)
+	.delete()
+	.type('<span class="title">You are a solid 3</span>')
+	.pause(1000)
+	.break()
+	.type('-my older sister Sumer');
+
+	*/
+
 	
+
 	// stories page sticky bar
 	$(window).scroll(function() {
 		if (document.body.scrollTop <= 70) {
