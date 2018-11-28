@@ -22,10 +22,10 @@ $(document).ready(function() {
 	const distanceToNextImage = -350;
 	let currentImageNumber = 0;
 
-	$("#slideshow-strip").setInterval(function () {
+	$("#slideshow-strip").click(function () {
 		currentImageNumber = (currentImageNumber + 1) % 6;
 		$("#slideshow-strip").css("left", + currentImageNumber * distanceToNextImage + "px");
-	}, 1000);
+	});
 
 	// to get the scrollbars onto firefox and internet explorer
 
