@@ -1,38 +1,61 @@
 $(document).ready(function() {
 
-	//arrow click = scroll!//
-	$("#arrow1").click(function() {
-		$(window).scrollTop(800);
-	});  //turning this off just to see if the below works out 
 
-	//option 2: $("#arrow1").onclick($("#fullscreen").fullpage({}));
+	// arrow scroollll 
+	$("#arrow1").on("click", function(event) {
+   		if (this.hash !== "") {
+      		event.preventDefault();
+				$(window).animate({scrollTop: 700}, 800, function(){
+        			window.location.hash = this.hash;
+      			});
+   		} 
+	});
 
-	/* option 3 $('#arrow1').onclick(function() {
-		$("#fullscreen").scrollTo("#about-page"[800]);
-	}); */
-
-	/* $("#arrow1").click(function() {
-		$(window).animate({scrollTop:$("#about-page").offset().bottom}, 1000);
-	}); */
-	// whats wrong with ALL OF THE SE E E 
-
-	//how the fuck do i install the above .fullpage ???????
 
 	//good good slideshow coding!!!//
 	const distanceToNextImage = -350;
-	let currentImageNumber = 0;
+	let currentImageNumber = 5;
 
-	$("#slideshow-strip").click(function () {
-		currentImageNumber = (currentImageNumber + 1) % 6;
-		$("#slideshow-strip").css("left", + currentImageNumber * distanceToNextImage + "px");
-	});
+	setInterval(function () {
+		currentImageNumber = (currentImageNumber - 1);
+		if (currentImageNumber <= 0)
+			currentImageNumber = 5;
+		$(".img" + currentImageNumber).fadeIn(1000);
+		$(".img" + (currentImageNumber + 1)%6).fadeOut(1000);
+	}, 5000);
+
+
+	// making homepage navbar responsive
+	let startingPercent = 90
+
+	$("#arrow1").click(function() {
+		startingPercent = (startingPercent + 0.5)
+		while (startingPercent < 105) {
+			startingPercent = (startingPercent + 0.5);
+			$("#homepage-navbar").delay(1000).css("top", startingPercent + "%");
+		}
+	}); // shrug
+
+	
 
 	// to get the scrollbars onto firefox and internet explorer
+		//shrug
 
 
 	// reviews page !!!
-	$(document).ready(function() {
-		$
+	setInterval(function() {
+
 	});
 	
+	// stories page sticky bar
+	$(window).scroll(function() {
+		if (document.body.scrollTop <= 70) {
+			$(".story-title").removeClass("titlealt");
+			$(".topbar").css("border-bottom","none");
+		} else {
+			$(".story-title").addClass("titlealt");
+			$(".topbar").css("border-bottom"," 3px solid #7CA5C7");
+		}
+
+	});
 });

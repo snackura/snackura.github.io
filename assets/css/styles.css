@@ -1,10 +1,10 @@
 body {
 	font-family: Avenir;
-	font-size: 20px;
+	font-size: 18px;
 	background-color: #D9E8F7;
 	color: #01010D;
 }
-
+/*
 @keyframes fadeIn {
 	0% { opacity:1; }
 	50% {opacity:0;}
@@ -54,14 +54,12 @@ body {
 #homepage-navbar {
 	position: absolute;
 	left: 68%;
-	top: 92%;
+	top: 90%;
 }
 
 #intro-line {
-	/* display: none; */
-	/*it's inactive right now — figure out how to animate it coming down!*/
 	position: absolute;
-	left: 50%;
+	left: 49%;
 	transform: translate(-21%, -10%);
 	
 }
@@ -119,18 +117,22 @@ body {
 
 #arrow1 {
 	height: 50px;
-	width: 148px;
+	width: 152px;
 	position: relative;
 	top: 20px;
-	left: 50%;
+	left: 48.4%;
 	transform: translateX(-35%);
-	background-color: none;
-	transition: background-color 1s;
+	transition: background-color 0.5s;
 	border: none;
 }
 
 #arrow1:hover {
 	cursor: pointer;
+	background-color: #7CA5C7;
+}
+
+button {
+	background-color: transparent;
 }
 
 #arrow1:active {
@@ -166,7 +168,10 @@ body {
 }
 
 .padding-fix {
-	padding-bottom: 16px;
+	padding-top: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
 }
 
 #container-container {
@@ -179,19 +184,11 @@ body {
 }
 
 #slideshow-container {
-	overflow: hidden;
 	height: 350px;
 	width: 350px;
 	position: relative;
 	top: 54.5px;
 	left: 60px;
-}
-
-#slideshow-strip {
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-	left: 0;
 }
 
 .slideshow-img {
@@ -201,6 +198,31 @@ body {
 
 .slideshow-img img {
 	width: 350px;
+}
+
+#one {
+	position: absolute;
+	top: 0px;
+}
+
+#two {
+	position: absolute;
+	top: 0px;
+}
+
+#three {
+	position: absolute;
+	top: 0px;
+}
+
+#four {
+	position: absolute;
+	top: 0px;
+}
+
+#five {
+	position: absolute;
+	top: 0px;
 }
 
 /*stuff on the portfolios page */
@@ -225,8 +247,6 @@ body {
 .option-button {
 	background-color: #F0F5FA;
 	height: 450px;
-	width: 350px;
-	height: 450px;
 	width: 300px;
 	transition: width 0.5s;
 	display: flex;
@@ -239,7 +259,7 @@ body {
 
 .option-button:hover {
 	cursor: pointer;
-	width: 500px;
+	width: 400px;
 }
 
 .option-name {
@@ -267,9 +287,58 @@ body {
 .imgstyles {
 	height: 400px;
 }
-/*help */
-.morepapers {
-	float: right;
+
+.paperseffect {
+	height: 250px;
+	width: 200px;
+}
+
+.portfolioallelse {
+	height: 450px;
+	width: 300px;
+	position: absolute;
+	z-index: 8;
+}
+
+.stack-of-papers {
+	position: absolute;
+	top: 50px;
+	left: 120px;
+}
+
+.paper {
+	height: 250px;
+	width: 200px;
+
+}
+
+.p1 {
+	position: absolute;
+	top: 0%;
+	transform: rotate(10deg) translate(-5px, 8px);
+}
+
+.p2 {
+	position: absolute;
+	top: 0%;
+	transform: rotate(-9deg) translate(3px, 12px);
+}
+
+.p3 {
+	position: absolute;
+	top: 0%;
+	transform: rotate(4deg) translate(8px, 0px);
+}
+
+.p4 {
+	position: absolute;
+	top: 0%;
+	transform: rotate(-3deg) translate(-4px, -6px);
+}
+
+.p5 {
+	position: absolute;
+	top: 0%;
 }
 
 /*i guess that's done? time for the contact page lol */
@@ -584,4 +653,114 @@ hr {
 
 #artintrotext {
 	width: 480px;
+}
+
+/*stories!!*/
+
+.topbar {
+	background-color: #F0F5FA;
+	opacity: 50%;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.storynav {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.story-title {
+	font-family: Didot;
+	font-size: 40px;
+	font-weight: bold;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.titlealt {
+	font-size: 24px;
+	top: -8px;
+	padding-bottom: 8px;
+}
+
+.storybook {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 36px;
+	background-color: #F0F5FA;
+	padding: 8px;
+	width: 900px;
+}
+
+.storylink {
+	text-decoration: none;
+	color: #01010D;
+	font-weight: bold;
+	transition: background-color 0.5s, color 0.5s;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: 16px;
+}
+
+.storylink:hover {
+	background-color: #7CA5C7;
+	color: #F0F5FA;
+}
+
+.poetrybook {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 36px;
+	background-color: #F0F5FA;
+	padding: 8px;
+	width: 900px;
+}
+
+.graf {
+	text-indent: 24px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.bigspace {
+	margin-top: 108px;
+}
+
+.biggerspace {
+	margin-top: 360px;
+}
+
+.biggestspace {
+	margin-top: 660px;
+}
+
+
+#berkeleybubble1 {
+
+}
+
+#berkeleybubble2 {
+	float: right;
+	text-align: right;
+	margin-right: 24px;
+	margin-top: -20px;
+}
+
+#ifuckedupthesizinglol {
+	height: 600px;
+}
+
+#strikepoem {
+	text-decoration: line-through;
+}
+
+.shadow {
+	text-shadow: 4px 4px #7CA5C7BF;
 }
