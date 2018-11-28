@@ -432,78 +432,21 @@ button {
 	width: 1400px;
 }
 
-.review-text.source {
-	float:right;
+.source {
+	position: absolute;
+	top: 50px;
+	left: 40px;
 }
 
-.review-text.quote {
+.quote {
 	font-family: Didot;
 	font-size: 40px;
 	font-weight: bold;
+	margin-top: ;
 }
 
-#roommate {
-	position: absolute;
-	top: 400px;
-	left: -100px;
-}
-
-#roommatesource {
-	position: relative;
-	right: 900px;
-}
-
-#girlfriend {
-	position: absolute;
-}
-
-#girlfriendsource {
-	position: relative;
-	right: 1040px;
-}
-
-#francesca {
-	position: absolute;
-	top: 60px;
-	left: 800px;
-}
-
-#francescasource {
-	position: relative;
-	right: 400px;
-}
-
-#roommate2 {
-	position: absolute;
-	top: 148px;
-	left: 80px;
-}
-
-#roommate2source {
-	position: relative;
-	right: 300px;
-}
-
-#sumer {
-	position: absolute;
-	top: 350px;
-	left: 900px;
-}
-
-#sumersource {
-	position: relative;
-	right: 1000px;
-}
-
-#jessíca {
-	position: absolute;
-	top: 240px;
-	left: -40px;
-}
-
-#jessícasource {
-	position: relative;
-	right: 800px;
+#typeit {
+	margin-left: 60px;
 }
 
 /*journalism page!*/
