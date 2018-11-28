@@ -17,10 +17,13 @@ $(document).ready(function() {
 
 	setInterval(function () {
 		currentImageNumber = (currentImageNumber - 1);
-		if (currentImageNumber <= 0)
-			currentImageNumber = 5;
 		$(".img" + currentImageNumber).fadeIn(1000);
-		$(".img" + (currentImageNumber + 1)%6).fadeOut(1000);
+		$(".img" + (currentImageNumber + 1)).fadeOut(1000);
+		if (currentImageNumber <= 0) {
+			currentImageNumber = 5;
+			$(".img" + currentImageNumber).fadeIn(1000);
+			$(".img" + (currentImageNumber + 1)%6).fadeOut(1000);
+		}
 	}, 5000);
 
 
