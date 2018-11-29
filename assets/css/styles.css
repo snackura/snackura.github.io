@@ -156,10 +156,16 @@ button {
 	text-align: center;
 }
 
+#aboutstuff {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+	top: 100px;
+}
+
 #about-text {
 	position: relative;
-	top: 14%;
-	left: 42%;
 	background-color: #F0F5FA;
 	height: 454px;
 	width: 750px;
@@ -175,9 +181,8 @@ button {
 }
 
 #container-container {
-	position: absolute;
-	top: 118%;
-	left: 4%;
+	position: relative;
+	top: 8px;
 	background-color: #F0F5FA;
 	height: 469px;
 	width: 469px;
@@ -408,7 +413,7 @@ button {
 	text-decoration: none;
 	background-color: #F0F5FA;
 	text-align: center;
-	color: #01010D;
+	color: ;
 	margin-top: 8px;
 }
 
@@ -424,8 +429,21 @@ button {
 }
 
 #reviews-box {
-	position: absolute;
-	top: 20%;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 900px;
+	background-color: #F0F5FA;
+}
+
+#typeit {
+	padding-top: 20px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 20px;
+	width: 840px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .review-quote {
@@ -436,6 +454,11 @@ button {
 	position: absolute;
 	top: 50px;
 	left: 40px;
+	width: 500px;
+}
+
+.sarah {
+	top: 120px;
 }
 
 .quote {
@@ -443,10 +466,6 @@ button {
 	font-size: 40px;
 	font-weight: bold;
 	margin-top: ;
-}
-
-#typeit {
-	margin-left: 60px;
 }
 
 /*journalism page!*/
@@ -591,7 +610,11 @@ hr {
 #sizecorrection {
 	width: 90px;
 	text-align: center;
-	margin-left: 24px;
+	margin-left: -116px;
+}
+
+.speciallink:hover {
+	cursor: pointer;
 }
 
 #artintrotext {
