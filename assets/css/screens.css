@@ -11,6 +11,10 @@
 		left: 48.4%;
 	}
 
+
+}
+
+
 @media screen and (max-height: 900) {
 	#sidebar-image {
 		position: relative;
@@ -25,6 +29,14 @@
 	#about-page {
 		position: relative;
 		top: 300px;
+	}
+
+	#portfolios {
+		top: 100px;
+	}
+
+	#portfolio-options{
+		top: 188px;
 	}
 
 	
