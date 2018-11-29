@@ -16,15 +16,9 @@ $(document).ready(function() {
 
 
 	// arrow scroollll 
-	$('#arrow1').on('click', function() {
-   		if (this.hash !== '') {
-      		event.preventDefault();
-      		var hash = this.hash;
-				$(window).animate({scrollTop: 700}, 800, function(){
-        			window.location.hash = this.hash;
-      			});
-   		} 
-	});
+	$('#arrow1').click( function() {
+				$(window).scrollTop(800);
+   		});
 
 
 	//good good slideshow coding!!! THIS ONE WORKS DONT
