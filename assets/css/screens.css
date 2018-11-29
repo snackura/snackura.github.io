@@ -5,30 +5,23 @@
 		position: relative;
 		left: 200px;
 	}
-
-	#arrow1 {
-		position: relative;
-		left: 48.4%;
-	}
-
-
 }
 
 
 @media screen and (max-height: 900) {
 	#sidebar-image {
 		position: relative;
-		top: 300px;
+		top: 450px;
 	}
 
 	#arrow1 {
 		position: relative;
-		top: 40px;
+		top: 80px;
 	}
 
 	#about-page {
 		position: relative;
-		top: 300px;
+		top: 600px;
 	}
 
 	#portfolios {
@@ -36,19 +29,18 @@
 	}
 
 	#portfolio-options{
-		top: 188px;
+		top: 288px;
 	}
 
-	
+	.option-button {
+		height: 550px;
+	}
+
+	.portfolio-image {
+		margin-top: 75px;
+	}
 }
 
 
 
 
-@media screen and (max-width: 1024px) {
-	
-}
-
-@media screen and (max-height: 800) {
-
-}

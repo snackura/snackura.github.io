@@ -293,11 +293,6 @@ button {
 	height: 400px;
 }
 
-.paperseffect {
-	height: 250px;
-	width: 200px;
-}
-
 .portfolioallelse {
 	height: 450px;
 	width: 300px;
@@ -305,46 +300,6 @@ button {
 	z-index: 8;
 }
 
-.stack-of-papers {
-	position: absolute;
-	top: 50px;
-	left: 120px;
-}
-
-.paper {
-	height: 250px;
-	width: 200px;
-
-}
-
-.p1 {
-	position: absolute;
-	top: 0%;
-	transform: rotate(10deg) translate(-5px, 8px);
-}
-
-.p2 {
-	position: absolute;
-	top: 0%;
-	transform: rotate(-9deg) translate(3px, 12px);
-}
-
-.p3 {
-	position: absolute;
-	top: 0%;
-	transform: rotate(4deg) translate(8px, 0px);
-}
-
-.p4 {
-	position: absolute;
-	top: 0%;
-	transform: rotate(-3deg) translate(-4px, -6px);
-}
-
-.p5 {
-	position: absolute;
-	top: 0%;
-}
 
 /*i guess that's done? time for the contact page lol */
 
