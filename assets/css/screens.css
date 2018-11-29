@@ -1,0 +1,42 @@
+
+
+@media screen and (max-width: 1440px) {
+	#sidebar-image {
+		position: relative;
+		left: 200px;
+	}
+
+	#arrow1 {
+		position: relative;
+		left: 48.4%;
+	}
+
+@media screen and (max-height: 900) {
+	#sidebar-image {
+		position: relative;
+		top: 300px;
+	}
+
+	#arrow1 {
+		position: relative;
+		top: 40px;
+	}
+
+	#about-page {
+		position: relative;
+		top: 300px;
+	}
+
+	
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+	
+}
+
+@media screen and (max-height: 800) {
+
+}
