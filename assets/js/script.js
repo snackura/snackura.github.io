@@ -15,11 +15,11 @@ $(document).ready(function() {
 	});
 
 
-	// arrow scroollll 
+	// arrow scroollll  
 	$('#arrow1').click( function() {
 				$(window).scrollTop(800);
    		});
-
+	// edit the above is Not Working and i wanna Scream but ya know its Okay i h  A te this 
 
 	//good good slideshow coding!!! THIS ONE WORKS DONT
 	const distanceToNextImage = -350;
@@ -67,7 +67,7 @@ $(document).ready(function() {
 		'<span class="quote">You cook such good noodles that now I have standards for noodles</span> <span class="source sarah">- my roommate</span>',
 		'<span class="quote">snac</span> <span class="source">- Daily Californian City News Editor Jessíca Jiménez</span>',
 		'<span class="quote">Please put on some pants</span> <span class="source">- my other roommate</span>',
-		'<span class="quote">hot thot tater tot</span> <span class="source">- my girlfriend</span>',
+		'<span class="quote">hot thot tater tot</span> <span class="source">- ¯\_(ツ)_/¯ </span>',
 		],
 		speed: 60,
 		breakLines: false,
